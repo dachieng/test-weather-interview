@@ -3,14 +3,14 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/dachieng/weather-forecasting">
+    <a href="https://github.com/dachieng/test-weather-interview">
         weatherapp
     </a>
 </p>
 
 # Weather Forecasting App
 
-Everything for the web project lives here. As we are using NextJS 13 - the paths of the file correlates to the url of the particular page (eg. `app/abc` correlates to `http://localhost:3001/abc`).
+Everything for the web project lives here. As we are using NextJS 13 - the paths of the file correlates to the url of the particular page (eg. `app/abc` correlates to `http://localhost:3000`).
 
 ## Technologies
 
@@ -40,7 +40,7 @@ yarn install
 ## Apis utilized
 
 - OpenWeatherMap API
-- GeoDB Cities API
+- Resctcountries API
 
 Run the following to set environment variables for code to connect to the app and the apis variables required in the setup:
 
@@ -51,10 +51,8 @@ cp .env.example .env.local
 To run the app locally, get the api and key values from the respective apis the actual VALUE to use in place of the below variables after setting up the account.
 
 ```bash
-NEXT_PUBLIC_CITIES_API_URL=xxxxxx
-NEXT_PUBLIC_XRAPID_API_KEY=xxxxxx
-NEXT_PUBLIC_XRAPID_API_HOST=xxxxxx
-NEXT_PUBLIC_WEATHER_URL=xxxxxx
+NEXT_PUBLIC_COUNTRIES_API_URL=xxx
+NEXT_PUBLIC_WEATHER_URL=xxx
 ```
 
 ## Starting the app
@@ -67,14 +65,6 @@ yarn run dev
 
 - The app should start at **http://localhost:3000**
 
-- The app url can be accessed via
-
-<p>
-    <a href="https://dorcas-weather-app.netlify.app/">
-        weatherapp
-    </a>
-</p>
-
 ## App use
 
-- Search for any city to view its weather results
+- Search for any country to view its weather results
