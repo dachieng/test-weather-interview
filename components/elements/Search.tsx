@@ -20,7 +20,7 @@ const Search: React.FC<Props> = ({ handleOnSearchChange }) => {
   const loadOptions = async (inputValue: string) => {
     const searchValue = inputValue || "";
     try {
-      const res = await fetch(`${url}/${searchValue}`);
+      const res = await fetch(`${url}/name/${searchValue}`);
 
       const data = await res.json();
 
@@ -35,8 +35,6 @@ const Search: React.FC<Props> = ({ handleOnSearchChange }) => {
                 : "Not Available",
           }))
         : [];
-
-      console.log("hekkk", dataValues);
 
       return {
         options: dataValues,
