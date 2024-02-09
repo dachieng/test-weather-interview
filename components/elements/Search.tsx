@@ -24,8 +24,6 @@ const Search: React.FC<Props> = ({ handleOnSearchChange }) => {
 
       const data = await res.json();
 
-      console.log("dhgsd", res);
-
       const dataValues = Array.isArray(data)
         ? data.map((country: any) => ({
             label: `${country.cca2} - ${country.name.common}`,
