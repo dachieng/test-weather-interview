@@ -34,9 +34,6 @@ const Home: React.FC<Props> = () => {
     dispatch(fetchWeather(latitude, longitude));
   };
 
-  console.log("countries:", countries.countries);
-  console.log("jhgfd", countriesData);
-
   const data = useMemo(() => countriesData, [countriesData]);
 
   const {

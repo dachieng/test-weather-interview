@@ -46,7 +46,6 @@ export const fetchWeather = (latitude: number, longitude: number) => {
       dispatch(fetchWeatherSuccess(data));
     } catch (error) {
       dispatch(fetchWeatherError(error));
-      console.log("error", error);
     }
   };
 };
