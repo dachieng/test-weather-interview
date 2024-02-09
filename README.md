@@ -68,3 +68,7 @@ yarn run dev
 ## App use
 
 - Search for any country to view its weather results
+
+### Challanges
+
+I struggled with writing tests for my Next.js application because I was unfamiliar with integrating testing frameworks and mocking external dependencies. This made it difficult to ensure my components and API calls behaved as expected under various conditions.
